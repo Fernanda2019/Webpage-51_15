@@ -12,7 +12,67 @@
                 <h1>Etiquetas input y otras  para crear formularios</h1>
                 <form action="" method="post">
                     <fieldset>
-                        <legend>Ejemplos de input</legend>
+                    <div>
+                        <legend>Carrera</legend>
+                     <select name="Carrera" id="carrera">
+                        <option value="4">LTI</option>
+                        <option value="3">LA</option>
+                        <option value="8">CP</option>
+                        <option value="5">LNI</option>
+                     </select>
+                    </div>
+
+                    <div>
+                        <legend>Sel.Carrera</legend>
+                     <select name="Carreramult" id="Carreramult" multiple>
+                        <option value="4">LTI</option>
+                        <option value="3">LA</option>
+                        <option value="8">CP</option>
+                        <option value="5">LNI</option>
+                     </select>
+                    </div>
+
+                    <div>
+                        <label for="Carreragpo">Carrera:</legend>
+                     <select name="Carreragpo" id="Carreragpo" multiple>
+                         <optgroup label="Profesionales">
+                        <option value="4">LTI</option>
+                        <option value="3">LA</option>
+                        <option value="8">CP</option>
+                        <option value="5">LNI</option>
+                        <option value="15">DDS</option>
+                    </optgroup>
+                    <optgroup labes="Tecnicas">
+                        <option value="15">Desarrollo de software</option>
+                    </optgroup>
+                     </select>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="equipos" id="masculino">
+                        <input type="radio" name="equipos" id="femenino">
+                        <input type="radio" name="genero" id="femenino">
+                        <input type="radio" name="genero" id="femenino">
+                    </div>
+
+                    <div>
+                        <label for="comentarios">comentarios</label>
+                        <textarea name="comentraios" id="comentarios" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="lenguaje">lenguaje</label>
+                        <input type="text"name="lenguaje" id="lengujae" list="
+                        lenguajes">
+                        <datalist id="lenguajes">
+                            <option value="python">
+                            <option value="visual basic">
+                            <option value="html">
+                            <option value="xlm">
+                            <option value="c++">
+                        </datalist>
+                    </div>
+
                     <div>
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" id="nombre">
